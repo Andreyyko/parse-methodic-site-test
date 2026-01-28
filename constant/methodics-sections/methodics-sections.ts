@@ -2,6 +2,7 @@ export const mockMethodics = [
   {
     category: "pscyho",
     title: "Для покращення психоемоційної сфери та психічного здоров’я",
+    mobtitle: "Для покращення психо-\nемоційної сфери та психічного здоров’я",
     heroImage: {
       url: "../../images/CommonImages/SectionsImageFrame/Pscyho.svg",
       alt: "Сімейні пари",
