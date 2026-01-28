@@ -48,7 +48,7 @@ export default async function MethodicPage({ params }: PageProps) {
       <PhotoFrame src={methodic.heroImage.url} alt={methodic.heroImage.alt} />
 
       <div className="pt-62 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {methodic.cards.map((card) => (
+        {methodic.methods.map((card) => (
           <Link
             key={card.id}
             href={`/methodics-sections/${category}/${card.slug}`}
@@ -61,10 +61,6 @@ export default async function MethodicPage({ params }: PageProps) {
             >
               <h3 className="heading-3 uppercase">{card.title}</h3>
             </FrameWrapper>
-
-            <p className="pt-3 heading-6 text-center -tracking-wide">
-              {card.description}
-            </p>
           </Link>
         ))}
       </div>
